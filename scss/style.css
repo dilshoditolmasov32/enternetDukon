@@ -1,0 +1,698 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1280px;
+}
+
+a {
+  display: block;
+  text-decoration-line: none;
+}
+
+.meu-btn {
+  display: none;
+  flex-direction: column;
+}
+
+#navbar-responsive .open {
+  left: 0;
+}
+
+header .gamburger-menu {
+  display: flex;
+  align-items: center;
+}
+header .reklama {
+  background-color: #0d2436;
+}
+header .reklama .zamok {
+  display: flex;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  justify-content: space-between;
+}
+header .reklama .zamok p,
+header .reklama .zamok h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.12em;
+  text-align: left;
+  color: #ffffff;
+}
+header .reklama .zamok h3 {
+  text-decoration-line: underline;
+  text-align: right;
+}
+header .nav {
+  border-bottom: 2px solid rgba(4, 4, 4, 0.309);
+}
+header .nav .header-about {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+header .nav .header-about ul {
+  display: flex;
+  gap: 32px;
+}
+header .nav .header-about ul li {
+  display: flex;
+}
+header .nav .header-about ul li a,
+header .nav .header-about ul li #select {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 23.87px;
+  text-align: left;
+  color: #161c24;
+}
+header .nav .header-about ul li #select {
+  background: none;
+  border: none;
+  outline: none;
+}
+header .nav .header-about .more-links {
+  display: flex;
+  gap: 30px;
+  margin-left: 280px;
+}
+header .nav .header-about .more-links .tel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header .nav .header-about .more-links .tel span {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.48px;
+  text-align: left;
+  color: #454f5b;
+}
+
+main .products .product {
+  padding-top: 20px;
+}
+main .products .product h5 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: rgba(20, 20, 20, 0.5176470588);
+}
+main .products .product h5 span {
+  color: #000000;
+}
+main .products .product h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #000000;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+main .products .product h3 pre {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: left;
+}
+main .products .product .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .products .product .cards .card {
+  box-shadow: 1px 1px 1px 1px #eaeaea inset;
+  position: relative;
+  width: 288px;
+  margin-bottom: 40px;
+  transition: 0.5s;
+}
+main .products .product .cards .card:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+main .products .product .cards .card #product-image {
+  text-align: center;
+  background: rgba(131, 131, 133, 0.6156862745);
+}
+main .products .product .cards .card #product-image .samsung {
+  width: 200px;
+  margin-top: 50px;
+}
+main .products .product .cards .card .reyting {
+  display: flex;
+  padding-left: 12px;
+  padding-right: 12px;
+  gap: 8px;
+}
+main .products .product .cards .card .reyting p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #454f5b;
+}
+main .products .product .cards .card h5 {
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #454f5b;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+main .products .product .cards .card .price {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23.87px;
+  text-align: left;
+  color: #161c24;
+}
+main .products .product .cards .card .price span {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.48px;
+  text-decoration-line: line-through;
+}
+main .products .product .cards .card .chegirmalar {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 12px;
+}
+main .products .product .cards .card .chegirmalar .productCount {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+main .products .product .cards .card .chegirmalar .productCount p {
+  width: 20px;
+  height: 20px;
+  background: #f3f2f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .products .product .cards .card .chegirmalar .productCount h6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #454f5b;
+}
+main .products .product .cards .card .chegirmalar #sale {
+  border: none;
+  outline: none;
+  background: #ffffff;
+  padding: 8px 12px;
+  color: #161c24;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.32px;
+  text-align: left;
+}
+main .products .product .cards .card #btn-sovga {
+  display: flex;
+  position: absolute;
+  left: 12px;
+  top: 40px;
+  gap: 10px;
+  padding: 6px 8px;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  margin-top: 8px;
+}
+main .qulf-about,
+main .qulf2-about {
+  display: flex;
+  gap: 30px;
+}
+main .qulf-about h2,
+main .qulf2-about h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: left;
+  color: #161c24;
+  margin-bottom: 24px;
+}
+main .qulf-about .p-1,
+main .qulf-about .p-2,
+main .qulf-about .p-3,
+main .qulf-about .p-4,
+main .qulf2-about .p-1,
+main .qulf2-about .p-2,
+main .qulf2-about .p-3,
+main .qulf2-about .p-4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: #454f5b;
+}
+main .qulf-about .p-1,
+main .qulf2-about .p-1 {
+  margin-bottom: 24px;
+}
+main .qulf-about .checkbox,
+main .qulf2-about .checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2;
+  gap: 32px;
+}
+main .qulf-about .checkbox .check,
+main .qulf2-about .checkbox .check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+main .qulf-about .qulf-about,
+main .qulf2-about .qulf-about {
+  padding-top: 70px;
+}
+main .qulf-about {
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+}
+main .qulf-about .p-2 {
+  margin-top: 24px;
+}
+main .qulf2-about {
+  display: flex;
+  align-items: center;
+  padding-top: 82px;
+  padding-bottom: 100px;
+}
+main .qulf2-about .text2 {
+  max-width: 605px;
+  width: 100%;
+}
+main .qulf2-about .p-3 {
+  margin-bottom: 16px;
+}
+main .form {
+  background: #f2f8ff;
+  padding-top: 64px;
+  padding-bottom: 56px;
+  text-align: center;
+}
+main .form h1 {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 62px;
+  text-align: center;
+  color: #161c24;
+}
+main .form .paragraph {
+  width: 520px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #454f5b;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+main .form #text,
+main .form #email {
+  width: 240px;
+  outline: none;
+  border: none;
+  background: rgba(22, 28, 36, 0.0392156863);
+  padding: 12px 16px;
+  margin-right: 24px;
+  height: 50px;
+}
+main .form #btn {
+  width: 220px;
+  background: #4295e4;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: none;
+}
+
+footer {
+  background-color: #0d2436;
+  padding-top: 55px;
+  padding-bottom: 25px;
+  gap: 97px;
+}
+footer .footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+footer .footer-links .footer-logo p {
+  margin-bottom: 150px;
+}
+footer .footer-links .footer-logo .social-networks .twitter {
+  margin-right: 24px;
+  margin-left: 24px;
+}
+footer .footer-links h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+footer .footer-links a {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+footer .footer-links #email,
+footer .footer-links #telefon {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  color: #c4cdd5;
+  margin-bottom: 16px;
+}
+footer .navigatsiya,
+footer .contact,
+footer .manzil,
+footer .malumot {
+  width: 180px;
+}
+footer .navigatsiya {
+  margin-left: 100px;
+}
+footer .footer-end {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.71px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.7490196078);
+}
+
+@media only screen and (max-width: 1180px) {
+  header .reklama .zamok {
+    display: flex;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    justify-content: space-between;
+  }
+  header .reklama .zamok p,
+  header .reklama .zamok h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.12em;
+    text-align: left;
+    color: #ffffff;
+  }
+  header .reklama .zamok h3 {
+    text-decoration-line: underline;
+    text-align: right;
+  }
+  header .nav {
+    border-bottom: 2px solid rgba(4, 4, 4, 0.309);
+  }
+  header .nav .header-about {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+  }
+  header .nav .header-about ul {
+    display: flex;
+    gap: 32px;
+  }
+  header .nav .header-about ul li {
+    display: flex;
+  }
+  header .nav .header-about ul li a,
+  header .nav .header-about ul li #select {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 23.87px;
+    text-align: left;
+    color: #161c24;
+  }
+  header .nav .header-about ul li #select {
+    background: none;
+    border: none;
+    outline: none;
+  }
+  header .nav .header-about .more-links {
+    display: flex;
+    gap: 30px;
+    margin-left: 40px;
+  }
+  header .nav .header-about .more-links .tel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  header .nav .header-about .more-links .tel span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.48px;
+    text-align: left;
+    color: #454f5b;
+  }
+}
+@media only screen and (max-width: 1070px) {
+  .qulf-about,
+  .qulf2-about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  .navigatsiya {
+    margin-left: 40px;
+  }
+  .footer-logo {
+    margin-bottom: 40px;
+  }
+  main .products .product {
+    padding-top: 20px;
+  }
+  main .products .product .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  footer .footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    padding: 32px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  #navbar-responsive {
+    position: fixed;
+    top: 120px;
+    bottom: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(27, 141, 223, 0.7176470588);
+    transition: 0.5s;
+  }
+  .meu-btn {
+    display: block;
+    border: none;
+    background: none;
+    width: 50px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  main .form {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  main .form #text,
+  main .form #email {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 710px) {
+  main .form {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  main .form #text,
+  main .form #email {
+    width: 240px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .qulf-about,
+  .qulf2-about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  #img2 {
+    width: 100%;
+  }
+  .loremTextlar .qulf2-about {
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 610px) {
+  main .products .product {
+    padding-top: 20px;
+  }
+  main .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  main .cards .card {
+    width: 240px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  main .products .product {
+    padding-top: 20px;
+  }
+  main .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  main .cards .card {
+    max-width: 220px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  main .products .product {
+    padding-top: 20px;
+  }
+  main .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  main .cards .card {
+    max-width: 200px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 460px) {
+  main .products .product {
+    padding-top: 20px;
+  }
+  main .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  main .cards .card {
+    max-width: 195px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  main .products .product {
+    padding-top: 20px;
+  }
+  main .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 101.1%;
+  }
+  main .cards .card {
+    width: 1000%;
+  }
+}
+@media only screen and (max-width: 570px) {
+  main .form {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  main .form #text,
+  main .form #email {
+    max-width: 500px;
+    width: 100%;
+  }
+  main .form .paragraph {
+    width: 100%;
+  }
+  main .form #btn {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 510px) {
+  footer .footer-links {
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+  footer .footer-links .footer-logo .social-networks .twitter {
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+  footer .navigatsiya,
+  footer .contact,
+  footer .manzil,
+  footer .malumot {
+    max-width: 180px;
+    width: 100%;
+  }
+  footer .navigatsiya {
+    margin-left: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

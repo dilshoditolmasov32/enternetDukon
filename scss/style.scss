@@ -15,6 +15,11 @@
 a {
   display: block;
   text-decoration-line: none;
+  transition: 1s;
+  &:hover {
+    text-decoration-line: underline;
+    color: blue;
+  }
 }
 
 .meu-btn {
@@ -82,6 +87,11 @@ header {
             line-height: 23.87px;
             text-align: left;
             color: #161c24;
+
+            &:hover {
+              text-decoration-line: underline;
+              color: blue;
+            }
           }
           #select {
             background: none;
@@ -314,7 +324,6 @@ main {
   .qulf-about {
     padding-top: 70px;
     display: flex;
-    // flex-wrap: wrap;
     align-items: center;
     .p-2 {
       margin-top: 24px;
@@ -485,6 +494,7 @@ footer {
 
           li {
             display: flex;
+
             a,
             #select {
               font-size: 20px;
@@ -726,22 +736,15 @@ footer {
 }
 
 @media only screen and (max-width: 460px) {
-  main {
-    .products {
-      .product {
-        padding-top: 20px;
-      }
-    }
-    .cards {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 20px;
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 
-      .card {
-        max-width: 195px;
-        width: 100%;
-      }
+    .card {
+      max-width: 195px;
+      width: 100%;
     }
   }
 }

@@ -15,6 +15,11 @@
 a {
   display: block;
   text-decoration-line: none;
+  transition: 1s;
+}
+a:hover {
+  text-decoration-line: underline;
+  color: blue;
 }
 
 .meu-btn {
@@ -84,6 +89,11 @@ header .nav .header-about ul li #select {
   line-height: 23.87px;
   text-align: left;
   color: #161c24;
+}
+header .nav .header-about ul li a:hover,
+header .nav .header-about ul li #select:hover {
+  text-decoration-line: underline;
+  color: blue;
 }
 header .nav .header-about ul li #select {
   background: none;
@@ -656,16 +666,13 @@ footer .footer-end {
   }
 }
 @media only screen and (max-width: 460px) {
-  main .products .product {
-    padding-top: 20px;
-  }
-  main .cards {
+  .cards {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
   }
-  main .cards .card {
+  .cards .card {
     max-width: 195px;
     width: 100%;
   }
